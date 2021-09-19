@@ -1,0 +1,215 @@
+<resources>
+    <string name="app_name">iPiD Demo</string>
+
+    <!-- Manifest  -->
+    <string name="facebook_app_id">185536220278120</string>
+    <string name="fb_login_protocol_scheme">fb185536220278120</string>
+
+    <!-- Splash screen -->
+    <string name="login_title">Log in</string>
+    <string name="signup_title">Sign up</string>
+    <string name="slider_title">Pay anywhere</string>
+    <string name="slider_content">Select your beneficiary\'s phone number or email address and the amount you want to send.</string>
+
+    <!-- Signup screen -->
+    <string name="signup_header">Sign up. It\'s free!</string>
+    <string name="signup_google_title">Sign up with Google</string>
+    <string name="signup_facebook_title">Sign up with Facebook</string>
+    <string name="signup_apple_title">Sign up with Apple</string>
+    <string name="signup_password_note_title">Your password should be at least 8 characters, and include 1 upper case letter, 1 lower case letter and 1 number.</string>
+    <string name="mobile_number_title">Mobile number</string>
+
+    <!-- Login screen -->
+    <string name="welcome_title">Welcome!</string>
+    <string name="login_header">Login to continue</string>
+    <string name="forget_password_title">Forgot password?</string>
+    <string name="login_google_title">Sign in with Google</string>
+    <string name="login_facebook_title">Sign in with Facebook</string>
+    <string name="login_apple_title">Sign in with Apple</string>
+    <string name="separator_title">OR</string>
+    <string name="login_error_title">Invalid username or password</string>
+
+    <!-- Home screen -->
+    <string name="home_title">Home</string>
+    <string name="home_header">Pay and get paid in 3 steps</string>
+    <string name="step_one_pay_description_title">Fill in transaction details</string>
+    <string name="step_two_pay_description_title">Select beneficiary phone number\nor email</string>
+    <string name="step_three_pay_description_title">Select your Bank or Payment\nprovider</string>
+    <string name="step_two_get_paid_description_title">Select payer phone number\nor email</string>
+    <string name="step_three_get_paid_description_title">Select the account to be paid</string>
+
+    <!-- Profile screen -->
+    <string name="profile_title">My iPiD Profile</string>
+    <string name="about_me_title">About\nMe</string>
+    <string name="my_accounts_title">My\nAccounts</string>
+    <string name="my_rewards_title">My\nRewards</string>
+    <string name="edit_title">Edit</string>
+    <string name="next_title">Next</string>
+    <string name="name_title">Name</string>
+    <string name="phone_number_title">Phone number</string>
+    <string name="email_title">Email</string>
+    <string name="address_title">Address</string>
+    <string name="get_paid_title">Get paid</string>
+    <string name="pay_online_title">Pay online</string>
+    <string name="details_title">Who I am</string>
+    <string name="aliases_title">My aliases</string>
+    <string name="my_bank_accounts_title">My Bank accounts (Name, AC, BIC)</string>
+    <string name="my_crypto_accounts_title">My Crypto accounts</string>
+    <string name="my_mobile_wallet_title">My Mobile wallet</string>
+    <string name="empty_field_title">-</string>
+    <string name="add_account_description_title">Add account to get paid</string>
+    <string name="import_account_title">Import from banking portal</string>
+    <string name="preferred_account_title">Set as Preferred Account</string>
+    <string name="separator_or_title">Or</string>
+
+    <!-- Activity screen -->
+    <string name="activity_title">Activity</string>
+    <string name="pending_requests_title">Pending Requests</string>
+    <string name="empty_activity_title">No activity</string>
+    <string name="empty_pending_list_title">No pending requests</string>
+    <string name="empty_activity_description_title">You have no activities yet at the moment.</string>
+    <string name="empty_pending_list_description_title">You have no pending requests yet at the moment.</string>
+    <string name="activity_action_title">Sent</string>
+    <string name="activity_pay_title">Pay</string>
+    <string name="remarks_title">Birthday gift</string>
+    <string name="my_activity_title">My iPiD Activity</string>
+
+    <!-- Rewards screen -->
+    <string name="under_construction_title">Under construction</string>
+
+    <!-- Pay Transact screen -->
+    <string name="zero_title">0</string>
+    <string name="one_title">1</string>
+    <string name="two_title">2</string>
+    <string name="three_title">3</string>
+    <string name="four_title">4</string>
+    <string name="five_title">5</string>
+    <string name="six_title">6</string>
+    <string name="seven_title">7</string>
+    <string name="eight_title">8</string>
+    <string name="nine_title">9</string>
+    <string name="dot_title">.</string>
+    <string name="continue_title">Continue</string>
+
+    <!-- Pay Contact screen -->
+    <string name="pay_contact_title">Contact list</string>
+
+    <!-- Pay Send screen -->
+    <string name="select_preferred_account_title">Select preferred account</string>
+    <string name="pay_send_title">Select account to be paid</string>
+    <string name="send_request_title">Send request</string>
+    <string name="add_account_title">Add account</string>
+    <string name="preferred_title">Preferred</string>
+
+    <!-- Request to pay details screen -->
+    <string name="view_details_title">View details</string>
+    <string name="pay_from_account_title">Pay from your account</string>
+    <string name="compare_provider_title">Compare payment providers</string>
+    <string name="phone_title">Phone</string>
+    <string name="bank_title">Bank</string>
+    <string name="bic_title">BIC</string>
+    <string name="account_title">Account</string>
+    <string name="copy_title">Copy</string>
+
+    <!-- Compare screen -->
+    <string name="compare_title">Where do you want to pay?</string>
+    <string name="compare_description_title">We help you compare providers like\nwhat you are used to do for flights\nor hotel bookings.</string>
+
+    <!-- Result screen -->
+    <string name="result_title">Select your Payment provider</string>
+    <string name="sender_title">You pay</string>
+    <string name="recipient_title">Recipient gets</string>
+    <string name="pay_title">You pay</string>
+    <string name="exchange_rate_title">Latest\nexchange\nrate</string>
+    <string name="go_to_site_title">Go to site</string>
+    <string name="temp_exchange_rate_1">101 SGD</string>
+    <string name="temp_exchange_rate_2">104 SGD</string>
+    <string name="temp_exchange_rate_3">105 SGD</string>
+    <string name="copy_details_title">Copy banking details in any provider App</string>
+    <string name="others_title">Others</string>
+    <string name="banking_details_title">Banking details</string>
+
+    <!-- Transit payment screen -->
+    <string name="transit_title">Finalize the payment in your bank or payment provider app</string>
+    <string name="transit_registration_title">Get started with iPiD</string>
+    <string name="go_title">Go</string>
+
+    <!-- Popups -->
+    <string name="popup_setup_bank_title">No account has been setup. Click Next to setup your account.</string>
+    <string name="popup_import_account_title">Sorry for the inconvenience. This is currently under construction.</string>
+    <string name="popup_remove_account_title">List of bank accounts</string>
+    <string name="popup_member_contact_description_title">Verify that you are sending the invite to the right payee and phone number before confirming.</string>
+    <string name="popup_member_bank_country_title">Recipient\'s Bank country</string>
+    <string name="popup_member_contact_title">Verify that this is the correct counterparty</string>
+    <string name="popup_non_member_contact_description_title">We will notify you when your invitation has been accepted.</string>
+    <string name="popup_confirm_title">Confirm</string>
+    <string name="popup_success_description_title">Request has been successfully sent.</string>
+    <string name="popup_add_bank_account_title">Add bank account</string>
+    <string name="popup_remove_bank_account_title">Remove bank account</string>
+    <string name="popup_copy_invite_title">Copy link</string>
+    <string name="popup_send_invite_title">Send invite</string>
+    <string name="popup_preferred_error_title">The preferred account cannot be un-selected. You can set another account as default account instead.</string>
+
+
+    <!-- Hints -->
+    <!-- Signup screen -->
+    <string name="first_name_title">First Name</string>
+    <string name="last_name_title">Last Name</string>
+
+    <!-- Login screen -->
+    <string name="password_title">Password</string>
+
+    <!-- Profile screen -->
+    <string name="residential_address_title">Residential Address</string>
+    <string name="email_address_title">Email Address</string>
+    <string name="account_number_title">Account number</string>
+
+    <!-- Pay Contact screen -->
+    <string name="search_placeholder_title">Name, Phone number, email</string>
+
+    <!-- Pay Transact screen -->
+    <string name="remarks_placeholder_title">What\'s it for?</string>
+
+    <!-- Tools -->
+    <!-- Home screen -->
+    <string name="date_title">Thu, 9th July 2021 11:21</string>
+    <string name="activity_content">John Wong wants to pay you and is asking for your banking details.</string>
+
+    <!-- Profile screen -->
+    <string name="phone_number">+65 8265 4526</string>
+    <string name="address">+65 8265 4526</string>
+    <string name="bank_accounts">DBS\n13300844</string>
+    <string name="email">John.Wong21@gmail.com</string>
+
+    <!-- Pay Transact screen -->
+    <string name="request_title">You request</string>
+
+    <!-- Pay Details screen -->
+    <string name="pay_request_details">John Wong has sent you a\nrequest to pay 150 EUR.</string>
+
+    <!-- Pay Request screen -->
+    <string name="pay_request_bank_number">1111 1111</string>
+
+    <!-- Request to pay details screen -->
+    <string name="request_to_pay">John Wong wants to pay you and\nis asking for your banking details.</string>
+    <string name="request_to_pay_content">John Wong has sent you a\nrequest to pay\n150 EUR\nFor Alain\'s gift</string>
+    <string name="bic_value">23421123</string>
+
+    <!-- Result screen -->
+    <string name="currency_value">10 SGD</string>
+    <string name="exchange_date">Mid\nmarket,\nTue, 27 Jul 2021</string>
+
+    <!-- Spinner -->
+    <string name="spinner_bank_name">Bank of Singapore</string>
+    <string name="spinner_country_name">Singapore</string>
+    <string name="spinner_currency_name">SGD</string>
+
+    <!-- Compare screen -->
+    <string name="icon_character">B</string>
+    <string name="contact_name">Adrien Baery</string>
+    <string name="pay_amount">100</string>
+
+    <!-- Popup -->
+    <string name="popup_non_member_invite_link">Share Invitation: https://www.ipid.com/invite/uYkuGH</string>
+    <string name="popup_member_title">Adrien Baery is not registered yet.</string>
+</resources>

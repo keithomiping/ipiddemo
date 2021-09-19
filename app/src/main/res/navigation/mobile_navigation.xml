@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <!-- Home Fragment-->
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.ipid.demo.ui.home.HomeFragment"
+        android:label="@string/home_title"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_paySendFragment"
+            app:destination="@+id/paySendFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_payFragment"
+            app:destination="@+id/payFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_activityDetailsFragment"
+            app:destination="@+id/activityDetailsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_ProfileFragment"
+            app:destination="@+id/navigation_notifications"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_payTransactFragment"
+            app:destination="@+id/payTransactFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_pendingListFragment"
+            app:destination="@+id/pendingListFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/pendingListFragment"
+        android:name="com.ipid.demo.PendingListFragment"
+        android:label=""
+        tools:layout="@layout/fragment_pending_list">
+        <action
+            android:id="@+id/action_pendingListFragment_to_resultFragment"
+            app:destination="@+id/resultFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_pendingListFragment_to_preferredAccountFragment"
+            app:destination="@+id/preferredAccountFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.ipid.demo.Result"
+        android:label=""
+        tools:layout="@layout/fragment_result">
+        <action
+            android:id="@+id/action_resultFragment_to_transitPaymentFragment"
+            app:destination="@+id/transitPaymentFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_resultFragment_to_resultDetailsFragment"
+            app:destination="@+id/resultDetailsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <argument
+            android:name="countryFrom"
+            android:defaultValue="default"
+            app:argType="string" />
+        <argument
+            android:name="amountFrom"
+            android:defaultValue="default"
+            app:argType="string" />
+        <argument
+            android:name="countryTo"
+            android:defaultValue="default"
+            app:argType="string" />
+        <argument
+            android:name="amountTo"
+            android:defaultValue="default"
+            app:argType="string" />
+        <argument
+            android:name="exchangeRate"
+            android:defaultValue="default"
+            app:argType="string" />
+        <argument
+            android:name="remarks"
+            android:defaultValue="default"
+            app:argType="string" />
+        <argument
+            android:name="id"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <argument
+            android:name="currencyFrom"
+            android:defaultValue="default"
+            app:argType="string" />
+        <argument
+            android:name="currencyTo"
+            android:defaultValue="default"
+            app:argType="string" />
+        <argument
+            android:name="notificationId"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/compareFragment"
+        android:name="com.ipid.demo.Compare"
+        android:label=""
+        tools:layout="@layout/fragment_compare">
+        <action
+            android:id="@+id/action_compareFragment_to_resultFragment"
+            app:destination="@+id/resultFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <argument
+            android:name="id"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <argument
+            android:name="country_from"
+            android:defaultValue="default"
+            app:argType="string" />
+        <argument
+            android:name="amount_from"
+            android:defaultValue="default"
+            app:argType="string" />
+        <argument
+            android:name="remarks"
+            android:defaultValue="default"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/transitPaymentFragment"
+        android:name="com.ipid.demo.TransitPayment"
+        android:label=""
+        tools:layout="@layout/fragment_transit_payment">
+        <action
+            android:id="@+id/action_transitPaymentFragment_to_HomeFragment"
+            app:destination="@+id/navigation_home"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <argument
+            android:name="message"
+            app:argType="string"
+            android:defaultValue="default" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/payTransactFragment"
+        android:name="com.ipid.demo.PayTransact"
+        android:label=""
+        tools:layout="@layout/fragment_pay_transact">
+        <action
+            android:id="@+id/action_payTransactFragment_to_payFragment"
+            app:destination="@+id/payFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <argument
+            android:name="requestType"
+            android:defaultValue="default"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/paySendFragment"
+        android:name="com.ipid.demo.PaySend"
+        android:label=""
+        tools:layout="@layout/fragment_pay_send">
+        <action
+            android:id="@+id/action_paySendFragment_to_HomeFragment"
+            app:destination="@+id/navigation_home"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_paySendFragment_to_transitFragment"
+            app:destination="@+id/transitFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <argument
+            android:name="countryFrom"
+            android:defaultValue="default"
+            app:argType="string" />
+        <argument
+            android:name="amountFrom"
+            android:defaultValue="default"
+            app:argType="string" />
+        <argument
+            android:name="countryTo"
+            android:defaultValue="default"
+            app:argType="string" />
+        <argument
+            android:name="amountTo"
+            android:defaultValue="default"
+            app:argType="string" />
+        <argument
+            android:name="exchangeRate"
+            android:defaultValue="default"
+            app:argType="string" />
+        <argument
+            android:name="remarks"
+            android:defaultValue="default"
+            app:argType="string" />
+        <argument
+            android:name="id"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <argument
+            android:name="currencyFrom"
+            android:defaultValue="default"
+            app:argType="string" />
+        <argument
+            android:name="currencyTo"
+            android:defaultValue="default"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/payFragment"
+        android:name="com.ipid.demo.PayContact"
+        android:label="">
+        <action
+            android:id="@+id/action_payFragment_to_transitFragment"
+            app:destination="@+id/transitFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_payFragment_to_paySendFragment"
+            app:destination="@+id/paySendFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_payFragment_to_resultFragment"
+            app:destination="@+id/resultFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_payFragment_to_homeFragment"
+            app:destination="@+id/navigation_home"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_payFragment_to_transitPaymentFragment"
+            app:destination="@+id/transitPaymentFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <argument
+            android:name="amountFrom"
+            android:defaultValue="default"
+            app:argType="string" />
+        <argument
+            android:name="amountTo"
+            android:defaultValue="default"
+            app:argType="string" />
+        <argument
+            android:name="currencyFrom"
+            android:defaultValue="default"
+            app:argType="string" />
+        <argument
+            android:name="currencyTo"
+            android:defaultValue="default"
+            app:argType="string" />
+        <argument
+            android:name="remarks"
+            android:defaultValue="default"
+            app:argType="string" />
+        <argument
+            android:name="exchangeRate"
+            android:defaultValue="default"
+            app:argType="string" />
+        <argument
+            android:name="requestType"
+            android:defaultValue="default"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/activityDetailsFragment"
+        android:name="com.ipid.demo.ActivityDetails"
+        tools:layout="@layout/fragment_activity_details">
+        <action
+            android:id="@+id/action_activityDetailsFragment_to_payDetailsFragment"
+            app:destination="@+id/payDetailsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_activityDetailsFragment_to_compareFragment"
+            app:destination="@+id/compareFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_activityDetailsFragment_to_HomeFragment"
+            app:destination="@+id/navigation_home"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <argument
+            android:name="notification_id"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/resultDetailsFragment"
+        android:name="com.ipid.demo.ResultDetails"
+        android:label=""
+        tools:layout="@layout/fragment_result_details">
+        <action
+            android:id="@+id/action_resultDetailsFragment_to_resultFragment"
+            app:destination="@+id/resultFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <argument
+            android:name="customer_id"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <argument
+            android:name="notification_id"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/preferredAccountFragment"
+        android:name="com.ipid.demo.PreferredAccount"
+        android:label=""
+        tools:layout="@layout/fragment_preferred_account">
+        <action
+            android:id="@+id/action_preferredAccountFragment_to_profileNavigationFragment"
+            app:destination="@+id/navigation_notifications"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_preferredAccountFragment_to_pendingListFragment"
+            app:destination="@+id/pendingListFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_preferredAccountFragment_to_homeFragment"
+            app:destination="@+id/navigation_home"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <argument
+            android:name="notificationId"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+
+    <!-- Dashboard Fragment-->
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.ipid.demo.ui.dashboard.DashboardFragment"
+        android:label=""
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_dashBoardFragment_to_payFragment"
+            app:destination="@+id/payFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_paySendFragment"
+            app:destination="@+id/paySendFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_profileFragment"
+            app:destination="@+id/ProfileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_activityDetailsFragment"
+            app:destination="@+id/activityDetailsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_profileNavigationFragment"
+            app:destination="@+id/navigation_notifications"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <!-- Notification Fragment-->
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.ipid.demo.ui.notifications.NotificationsFragment"
+        android:label=""
+        tools:layout="@layout/fragment_notifications">
+        <action
+            android:id="@+id/action_notificationFragment_to_homeFragment"
+            app:destination="@+id/navigation_home"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_notificationFragment_to_profileFragment"
+            app:destination="@+id/ProfileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_notificationFragment_to_preferredAccountFragment"
+            app:destination="@+id/preferredAccountFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <argument
+            android:name="accountSetup"
+            android:defaultValue="true"
+            app:argType="boolean" />
+        <argument
+            android:name="viewMyAccounts"
+            android:defaultValue="false"
+            app:argType="boolean" />
+    </fragment>
+</navigation>

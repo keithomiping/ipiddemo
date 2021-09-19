@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="40dp"
+    android:layout_marginEnd="40dp"
+    android:background="@color/font_color_200"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingBottom="40dp"
+    tools:context=".ProfileAliases">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/viewLayoutAliases"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/numberlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textViewPhoneNumberLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="@string/phone_number_title"
+                android:textColor="@color/font_color"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageViewPhoneEditIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans_bold"
+                android:src="@drawable/ic_baseline_edit_24"
+                android:text="@string/name_title"
+                android:textColor="@color/font_color"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toStartOf="@+id/imageViewPhoneCloseIcon"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageViewPhoneCloseIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans_bold"
+                android:src="@drawable/ic_baseline_close_24"
+                android:text="@string/name_title"
+                android:textColor="@color/font_color"
+                android:textSize="15sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textViewPhoneNumber"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/open_sans"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/font_color"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/numberlayout"
+            tools:text="@string/phone_number" />
+
+        <LinearLayout
+            android:id="@+id/phoneLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/numberlayout">
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                app:ccpDialog_backgroundColor="@color/font_color_700"
+                app:ccpDialog_searchEditTextTint="@color/white"
+                app:ccpDialog_showCloseIcon="true"
+                app:ccpDialog_textColor="@color/white"
+                app:ccp_autoDetectCountry="false"
+                app:ccp_defaultPhoneCode="65"
+                app:ccp_showNameCode="true"
+                app:ccp_textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editTextPhoneNumber"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bottom_line"
+                android:fontFamily="@font/open_sans"
+                android:gravity="left"
+                android:hint="@string/phone_number_title"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textCursorDrawable="@null"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/emailLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phoneLayout">
+
+            <TextView
+                android:id="@+id/textViewAddressLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="@string/email_title"
+                android:textColor="@color/font_color"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageViewEmailEditIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans_bold"
+                android:src="@drawable/ic_baseline_edit_24"
+                android:text="@string/name_title"
+                android:textColor="@color/font_color"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toStartOf="@+id/imageViewEmailCloseIcon"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageViewEmailCloseIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans_bold"
+                android:src="@drawable/ic_baseline_close_24"
+                android:text="@string/name_title"
+                android:textColor="@color/font_color"
+                android:textSize="15sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textViewEmailAddress"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/open_sans"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/font_color"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailLayout"
+            tools:text="@string/address" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_bottom_line"
+            android:fontFamily="@font/open_sans"
+            android:gravity="left"
+            android:hint="@string/email_address_title"
+            android:inputType="textEmailAddress"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/font_color"
+            android:textCursorDrawable="@null"
+            android:textSize="15sp"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

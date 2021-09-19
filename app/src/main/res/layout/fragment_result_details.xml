@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginBottom="45dp"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ResultDetails">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="@string/banking_details_title"
+            android:textColor="@color/font_color"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/details1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:padding="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitle">
+
+            <TextView
+                android:id="@+id/textViewNameLabel"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/open_sans"
+                android:gravity="left"
+                android:text="@string/name_title"
+                android:textColor="@color/font_color"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="80dp"
+                android:background="@drawable/edittext_bottom_line"
+                android:fontFamily="@font/open_sans"
+                android:gravity="left|center_vertical"
+                android:inputType="textMultiLine"
+                android:textColor="@color/font_color"
+                android:textColorHint="@color/font_color"
+                android:textCursorDrawable="@null"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewNameLabel"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/contact_name" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/details2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:padding="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/details1">
+
+            <TextView
+                android:id="@+id/textViewPhoneLabel"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/phone_title"
+                android:textColor="@color/font_color"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewPhone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="80dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_bottom_line"
+                android:fontFamily="@font/open_sans"
+                android:gravity="left|center_vertical"
+                android:inputType="textMultiLine"
+                android:textColor="@color/font_color"
+                android:textColorHint="@color/font_color"
+                android:textCursorDrawable="@null"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewPhoneLabel"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/phone_number" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/details3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:padding="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/details2">
+
+            <TextView
+                android:id="@+id/textViewEmailLabel"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/email_title"
+                android:textColor="@color/font_color"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="80dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_bottom_line"
+                android:fontFamily="@font/open_sans"
+                android:gravity="left|center_vertical"
+                android:inputType="textMultiLine"
+                android:textColor="@color/font_color"
+                android:textColorHint="@color/font_color"
+                android:textCursorDrawable="@null"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewEmailLabel"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/email" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/details4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:padding="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/details3">
+
+            <TextView
+                android:id="@+id/textViewBankLabel"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/bank_title"
+                android:textColor="@color/font_color"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewBank"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="80dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_bottom_line"
+                android:fontFamily="@font/open_sans"
+                android:gravity="left|center_vertical"
+                android:inputType="textMultiLine"
+                android:textColor="@color/font_color"
+                android:textColorHint="@color/font_color"
+                android:textCursorDrawable="@null"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewBankLabel"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/spinner_bank_name" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/details5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:padding="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/details4">
+
+            <TextView
+                android:id="@+id/textViewBICLabel"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/bic_title"
+                android:textColor="@color/font_color"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewBIC"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="80dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_bottom_line"
+                android:fontFamily="@font/open_sans"
+                android:gravity="left|center_vertical"
+                android:inputType="textMultiLine"
+                android:textColor="@color/font_color"
+                android:textColorHint="@color/font_color"
+                android:textCursorDrawable="@null"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewBICLabel"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/bic_value" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/details6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:padding="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/details5">
+
+            <TextView
+                android:id="@+id/textViewAccountLabel"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/account_title"
+                android:textColor="@color/font_color"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewAccount"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="80dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_bottom_line"
+                android:fontFamily="@font/open_sans"
+                android:gravity="left|center_vertical"
+                android:inputType="textMultiLine"
+                android:textColor="@color/font_color"
+                android:textColorHint="@color/font_color"
+                android:textCursorDrawable="@null"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewAccountLabel"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/pay_request_bank_number" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/details7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/details6">
+
+            <TextView
+                android:id="@+id/textViewAddressLabel"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/address_title"
+                android:textColor="@color/font_color"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewAddress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="80dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_bottom_line"
+                android:fontFamily="@font/open_sans"
+                android:gravity="left|center_vertical"
+                android:inputType="textMultiLine"
+                android:textColor="@color/font_color"
+                android:textColorHint="@color/font_color"
+                android:textCursorDrawable="@null"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewAddressLabel"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/address" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/buttonCopy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/button_radius_border"
+            android:backgroundTint="@color/font_color"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:paddingStart="40dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="40dp"
+            android:paddingBottom="10dp"
+            android:text="@string/copy_title"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:cornerRadius="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/details7" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
